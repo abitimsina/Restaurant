@@ -1,0 +1,11 @@
+<div>
+
+    <p>Restaurant Name: <input type="text" [(ngModel)]='restaurant.name'></p>
+    <div *ngIf='name'>Restaurant name must be 3 characters.</div>
+    <p>Cuisine: <input type="text" [(ngModel)]='restaurant.cuisine'></p>
+    <div *ngIf='cuisine'>Cuisine name must be 3 characters.</div>
+    <button type="submit" (click)="onSubmit()">Register</button>
+    <button type="button" [routerLink]="['/restaurants']">Cancel</button>
+{{restaurant | json}}
+
+</div>

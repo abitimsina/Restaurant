@@ -1,0 +1,6 @@
+<div>
+  Restaurant Name: <input type="text" [(ngModel)]="restaurant.name">
+  Cuisine Type: <input type="text" [(ngModel)]="restaurant.cuisine">
+  <button type="button" [routerLink]="['/restaurants']">Cancel</button>
+  <button type="submit" (click)="editUpdateRestaurant(restaurant)">Edit</button>
+</div>
